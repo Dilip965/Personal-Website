@@ -33,12 +33,19 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="container mt-5">
-        <div class="jumbotron text-center">
+<!-- Home Section -->
+<section id="home" class="container-fluid p-5 bg-primary text-white text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <h1 class="display-4">Welcome to My Portfolio!</h1>
-            <p class="lead">I am Dilip Nandiwale, a passionate software developer.</p>
+            <p class="lead mt-4">I am Dilip Nandiwale, a passionate software developer.</p>
+            <hr class="my-4" style="border-color: #ffcc00; width: 50%;">
+            <p class="mt-4">I specialize in building software solutions that enhance user experience and drive business growth.</p>
+            <a class="btn btn-warning btn-lg mt-3" href="#about" role="button">Learn More About Me</a>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- About Section -->
 <!-- About Me Section -->
@@ -67,36 +74,38 @@
 </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects" class="container mt-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                       
-                        <h5 class="card-title">Agro Innovation</h5>
-                        <p class="card-text">This project focuses on gathering information about technology and providing guided videos for new technology. The tech stack used includes HTML, CSS, JavaScript, and Bootstrap.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+ <!-- Projects Section -->
+<section id="projects" class="container py-5">
+    <h2 class="text-center mb-5 display-4 text-primary">My Projects</h2>
+    <div class="row justify-content-center">
 
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <h5 class="card-title">Heart Disease Prediction</h5>
-                        <p class="card-text">A machine learning project that predicts the likelihood of heart disease using Random Forest algorithm with an accuracy of 75%. The project aims to achieve more than 90% accuracy with advanced techniques.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
-                        <h2></h2>
-                    </div>
+        <!-- Project 1: Agro Innovation -->
+        <div class="col-md-5 mb-4 mx-3 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 h-100">
+                <img src="Resources/agro.jpg" class="card-img-top" alt="Agro Innovation Project" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title text-dark font-weight-bold">Agro Innovation</h5>
+                    <p class="card-text text-muted">A centralized platform providing real-time weather updates, government schemes, and current market prices to support farmers.</p>
+                    <a href="#" class="btn btn-primary mt-auto">View Project</a>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Project 2: Heart Disease Prediction -->
+        <div class="col-md-5 mb-4 mx-3 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 h-100">
+                <img src="Resources/HDP.jpg" class="card-img-top" alt="Heart Disease Prediction Project" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title text-dark font-weight-bold">Heart Disease Prediction</h5>
+                    <p class="card-text text-muted">A machine learning project that predicts the likelihood of heart disease using the Random Forest algorithm with an accuracy of 75%.</p>
+                    <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="container mt-5">
