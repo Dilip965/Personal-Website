@@ -1,142 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilip's Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilip's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Dilip Nandiwale</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resources">Online Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Resume">Resume</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-<!-- Home Section -->
-<section id="home" class="container-fluid p-5 bg-primary text-white text-center">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h1 class="display-4">Welcome to My Portfolio!</h1>
-            <p class="lead mt-4">I am Dilip Nandiwale, a passionate software developer.</p>
-            <hr class="my-4" style="border-color: #ffcc00; width: 50%;">
-            <p class="mt-4">I specialize in building software solutions that enhance user experience and drive business growth.</p>
-            <a class="btn btn-warning btn-lg mt-3" href="#about" role="button">Learn More About Me</a>
-        </div>
+  <!-- Navigation -->
+  <nav class="bg-gray-900 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-xl font-semibold">Dilip Nandiwale</div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#projects" class="hover:text-yellow-400">Projects</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        <a href="#resources" class="hover:text-yellow-400">Resources</a>
+        <a href="#Resume" class="hover:text-yellow-400">Resume</a>
+      </div>
     </div>
-</section>
+  </nav>
 
-
-    <!-- About Section -->
-<!-- About Me Section -->
-<section id="about" class="container mt-5">
-    <h2 class="text-center mb-4">About Me</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <p>Hi, I'm <strong>Dilip Nandiwale</strong>, a passionate Software Engineer from Solapur. I'm currently pursuing my Bachelor of Technology in Computer Science and Engineering at Punyashlok Ahilyadevi Holkar Solapur University, where I have maintained a CGPA of 9.5 (2021-2025). I am committed to delivering high-quality code and innovative solutions that enhance user experience and drive business growth.</p>
-            
-            <h4>Skills & Abilities</h4>
-            <ul>
-                <li><strong>Frontend Development:</strong> React, HTML, CSS, JavaScript</li>
-                <li><strong>Programming Languages:</strong> Python, C++, C, Java</li>
-                <li><strong>Data Structures & Algorithms:</strong> Strong foundation in DSA, Software Design, Machine Learning</li>
-                <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
-                <li><strong>Version Control:</strong> Git, GitHub</li>
-                <li><strong>Operating Systems and Networking:</strong> Strong in CN, DBMS, OS</li>
-                <li><strong>Cloud & Environments:</strong> AWS, Unix/Linux environments, Shell scripting</li>
-                <li><strong>Soft Skills:</strong> Excellent communication skills, Problem-solving skills</li>
-            </ul>
-
-            <h4>Objective</h4>
-            <p>I am committed to delivering high-quality code and innovative solutions that enhance user experience and drive business growth.</p>
-        </div>
+  <!-- Home Section -->
+  <section id="home" class="bg-blue-600 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold">Welcome to My Portfolio!</h1>
+      <p class="text-lg mt-4">I am Dilip Nandiwale, a passionate software developer.</p>
+      <hr class="my-6 border-yellow-400 w-1/2 mx-auto">
+      <p>I specialize in building software solutions that enhance user experience and drive business growth.</p>
+      <a href="#about" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded hover:bg-yellow-300">Learn More About Me</a>
     </div>
-</section>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+      <p class="mb-6">Hi, I'm <strong>Dilip Nandiwale</strong>, a passionate Software Engineer from Solapur. I'm currently pursuing my Bachelor of Technology in Computer Science and Engineering at Punyashlok Ahilyadevi Holkar Solapur University, with a CGPA of 9.5 (2021-2025).</p>
 
- <!-- Projects Section -->
-<section id="projects" class="container py-5">
-    <h2 class="text-center mb-5 display-4 text-primary">My Projects</h2>
-    <div class="row justify-content-center">
+      <h3 class="text-xl font-semibold mb-2">Skills & Abilities</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Frontend:</strong> React, HTML, CSS, JavaScript</li>
+        <li><strong>Languages:</strong> Python, C++, C, Java</li>
+        <li><strong>DSA & ML:</strong> Strong DSA, Software Design, Machine Learning</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Systems:</strong> CN, DBMS, OS</li>
+        <li><strong>Cloud:</strong> AWS, Unix/Linux, Shell scripting</li>
+        <li><strong>Soft Skills:</strong> Communication, Problem-solving</li>
+      </ul>
 
-        <!-- Project 1: Agro Innovation -->
-        <div class="col-md-5 mb-4 mx-3 d-flex align-items-stretch">
-            <div class="card shadow-lg border-0 h-100">
-                <img src="Resources/agro.jpg" class="card-img-top" alt="Agro Innovation Project" style="height: 200px; object-fit: cover;">
-                <div class="card-body text-center d-flex flex-column">
-                    <h5 class="card-title text-dark font-weight-bold">Agro Innovation</h5>
-                    <p class="card-text text-muted">A centralized platform providing real-time weather updates, government schemes, and current market prices to support farmers.</p>
-                    <a href="#" class="btn btn-primary mt-auto">View Project</a>
-                </div>
-            </div>
-        </div>
+      <h3 class="text-xl font-semibold mt-6 mb-2">Objective</h3>
+      <p>I am committed to delivering high-quality code and innovative solutions that enhance user experience and drive business growth.</p>
+    </div>
+  </section>
 
-        <!-- Project 2: Heart Disease Prediction -->
-        <div class="col-md-5 mb-4 mx-3 d-flex align-items-stretch">
-            <div class="card shadow-lg border-0 h-100">
-                <img src="Resources/HDP.jpg" class="card-img-top" alt="Heart Disease Prediction Project" style="height: 200px; object-fit: cover;">
-                <div class="card-body text-center d-flex flex-column">
-                    <h5 class="card-title text-dark font-weight-bold">Heart Disease Prediction</h5>
-                    <p class="card-text text-muted">A machine learning project that predicts the likelihood of heart disease using the Random Forest algorithm with an accuracy of 75%.</p>
-                    <a href="https://www.heartsathi.online/" class="btn btn-primary mt-auto">View Project</a>
-                </div>
-            </div>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-center text-4xl font-bold text-blue-600 mb-12">My Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Project 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
+          <img src="Resources/agro.jpg" alt="Agro Innovation" class="h-48 object-cover w-full">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-xl font-bold mb-2">Agro Innovation</h3>
+            <p class="text-gray-600 mb-4">A centralized platform providing real-time weather updates, government schemes, and current market prices to support farmers.</p>
+            <a href="#" class="mt-auto text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">View Project</a>
+          </div>
         </div>
 
+        <!-- Project 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
+          <img src="Resources/HDP.jpg" alt="Heart Disease Prediction" class="h-48 object-cover w-full">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-xl font-bold mb-2">Heart Disease Prediction</h3>
+            <p class="text-gray-600 mb-4">A machine learning project that predicts the likelihood of heart disease using the Random Forest algorithm with 75% accuracy.</p>
+            <a href="https://www.heartsathi.online/" target="_blank" class="mt-auto text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">View Project</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="container mt-5">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch, please contact me at <a href="mailto:nandiwaledilip@gmail.com">nandiwaledilip@gmail.com</a>.</p>
-    </section>
-
-    <!-- Online Resources Section -->
-    <section id="resources" class="container mt-5">
-        <h2>Online Resources</h2>
-        <ul></li>
-              <li> <a href="https://leetcode.com/u/Dilip13/" target="_blank">LeetCode Profile</a></li>
-            <li><a href="https://www.github.com/Dilip965" target="_blank">My GitHub</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank">My LinkedIn</a></li>
-             <li><a href="https://www.youtube.com/@RND_IN_Tech" target="_blank">YouTube Channel: RND_IN_Tech</a> </li>
-
-        </ul>
-    </section>
-    <!-- Resume Section -->
-<section id="Resume" class="container mt-5">
-    <h2 class="text-center mb-4">Resume</h2>
-    <p class="text-center">Download my resume to learn more about my experience and skills.</p>
-    <div class="text-center">
-        <a href="Resources/Dilip Nandiwale.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p>If you'd like to get in touch, email me at: <a href="mailto:nandiwaledilip@gmail.com" class="text-blue-600 underline">nandiwaledilip@gmail.com</a></p>
     </div>
-</section>
+  </section>
 
+  <!-- Online Resources Section -->
+  <section id="resources" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Online Resources</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><a href="https://leetcode.com/u/Dilip13/" target="_blank" class="text-blue-600 underline">LeetCode Profile</a></li>
+        <li><a href="https://www.github.com/Dilip965" target="_blank" class="text-blue-600 underline">GitHub</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" class="text-blue-600 underline">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@RND_IN_Tech" target="_blank" class="text-blue-600 underline">YouTube: RND_IN_Tech</a></li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Resume Section -->
+  <section id="Resume" class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Resume</h2>
+      <p class="mb-4">Download my resume to learn more about my experience and skills.</p>
+      <a href="Resources/Dilip Nandiwale.pdf" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Download Resume</a>
+    </div>
+  </section>
+
 </body>
 </html>
